@@ -102,3 +102,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                 </div>
             </form>
+
+            <!-- Task List -->
+            <h2>Task List</h2>
+            <ul style="list-style: none; padding: 0;">
+                <!-- TODO: Loop through tasks array and display each task with a toggle and delete option -->
+                <!-- If there are no tasks, display a message saying "No tasks yet. Add one above!" -->
+                
+                <?php             
+                    if(empty($info)){
+                ?>
+                 <li>No tasks yet. Add one above!</li>
+
+                <?php }else{
+                    foreach($info as $index => $i){
+                ?>
