@@ -53,4 +53,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>To-Do App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
 
-    
+    <style>
+        body {
+            margin-top: 20px;
+        }
+        .task-card {
+            border: 1px solid #ececec; 
+            padding: 20px;
+            border-radius: 5px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+        }
+        .task{
+            color: #888;
+        }
+        .task-done {
+            text-decoration: line-through;
+            color: #888;
+        }
+        .task-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
