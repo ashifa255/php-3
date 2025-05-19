@@ -85,3 +85,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     </style>
 </head>
+
+<body>
+    <div class="container">
+        <div class="task-card">
+            <h1>Simple To-Do App</h1>
+
+            <!-- Add Task Form -->
+            <form method="POST">
+                <div class="row">
+                    <div class="column column-75">
+                        <input type="text" name="task" placeholder="Enter Your New Task" required>
+                    </div>
+                    <div class="column column-25">
+                        <button type="submit" class="button-primary">Add Task</button>
+                    </div>
+                </div>
+            </form>
