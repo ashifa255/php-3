@@ -129,3 +129,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </span>
                     </button>
                      </form>
+
+                     <form method="POST">
+                        <input type="hidden" name="delete" value="<?= $index ?>">
+                        <button type="submit" class="button button-outline" style="margin-left: 10px;">Delete</button>
+                     </form>
+                </li>
+                <?php
+                    }
+                }
+                ?>
+
+            </ul>
+
+        </div>
+    </div>
+</body>
+</html>
+  
