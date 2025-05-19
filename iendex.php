@@ -117,3 +117,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <?php }else{
                     foreach($info as $index => $i){
                 ?>
+                <!-- if there are tasks, display each task with a toggle and delete option -->
+
+                        <li class="task-item">
+                            <form method="POST" style="flex-grow: 1;">
+                                <input type="hidden" name="toggle" value="<?= $index ?>">
+                           
+                            <button type="submit" style="border: none; background: none; cursor: pointer; text-align: left; width: 100%;">
+                        <span class="task <?= $i['done']? 'task-done': '' ?>">
+                          <?= $i['data'] ?>
+                        </span>
+                    </button>
+                     </form>
